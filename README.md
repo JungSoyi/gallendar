@@ -191,110 +191,46 @@ Today버튼을 클릭하여 현재 날짜를 돌아갈 수 있습니다.
 
 ### Next.js
 
-프로젝트의 특성 상 동적인 데이터를 받아와서 처리해주는 것 보단, 사진, 게시글 같은 정적인 데이터들을 주고받는 경우가 대다수인 상황입니다.
-
-또한, 사용자가 페이지에 접속하게 되면 저희가 구현한 다양한 기능을 통해 인터렉션이 이루어지기 때문에, SSG방식을 사용하여 페이지 전환속도를 향상시키기위해 Next.js를 선택하였습니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aa8f1601-f055-42ee-9ffa-bef58f7a161d/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fca49bfc-ff0a-4af6-bf3f-e554cf181e0c/Untitled.png)
-
-![ts-removebg-preview.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/548d5662-3b51-45fb-ad1f-09586c31fd9e/ts-removebg-preview.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aed09b19-08c3-44e0-a981-f8dec8b4f145/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8248daf5-42ae-4d8b-9d21-462311c2fe7f/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e20ec987-65d1-4455-a927-a23b5f3bb273/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d49bcdf7-6eab-4ceb-9b70-940fbf312297/Untitled.png)
-
 ### TypeScript
-
-API 요청을 보낼 때 즉, 게시글을 작성하거나 받아올 때 주고받는 데이터 타입이 명확합니다.
-
-그렇기 때문에, 적절하지 못한 타입의 데이터가 받아져서 에러가 발생하거나 프로그램이 죽는 경우를 방지하기 위해 타입스크립트를 선택했습니다.
 
 ### Tailwind CSS
 
-이번 프로젝트에서 웹앱을 개발하기로 결정했고, 반응형 구현은 필수적이기 때문에, 반응형을 쉽고 빠르게 할 수 있고 별도의 CSS 파일 없이 파일을 줄일 수 있는 Tailwind CSS를 선택했습니다.
-
 ### React Query
-
-서비스 특성 상, 월이 넘어갈 때마다 GET요청을 보내줘야하기 때문에, update가 이루어졌을 때, 자동으로 Get요청을 다시 보내주는 강점을 가진 React Query가 적절하다고 판단했습니다.
-
-즉, 서버의 상태를 불러오고 캐싱하여 지속적으로 동기화 할 수 있다는 점이 저희의 프로젝트와 잘 맞다고 생각했기 때문에 선택했습니다.
 
 ### Recoil
 
-저희가 코드스테이츠를 통해 배운 상태관리 툴은 Redux였지만, 준비과정이 복잡하고 저희의 프로젝트에는 오버스택이라는 판단을 했습니다.
-
-그래서 Learning Curve가 낮고 쉽게 상태를 전역으로 관리할 수 있는 Recoil을 도입하기로 결정했습니다.
-
 ### S3 + CloudFront를 통한 정적배포
-
-SSG방식으로 구현한 프로젝트를 S3를 통해 정적배포를 하고, CloudFront와 연결시켜 CDN을 통해 배포 범위를 확장시키기로 결정했습니다.
 
 ## Back-end
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6a3149ca-61e5-4753-90c2-92a2ec00748c/Untitled.png)
-
 ### AWS (EC2, S3, ACM)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fad0b4e5-7e36-436d-88c4-730a8b2c0e25/Untitled.png)
 
 ### Jenkins
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e9ac5de-ba60-4dff-8521-2b24499a4199/Untitled.png)
-
 ### Docker
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/752f9fd4-829f-46ce-8c97-1ebd5e1435b4/Untitled.png)
 
 ### Spring Boot 2.7.5
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b158b717-cec4-4ab5-9707-52200d30977b/Untitled.png)
-
 ### JPA 2.7.5
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8716e122-025f-4243-8d1a-89c1eb01ebd2/Untitled.png)
 
 ### JWT
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50faf0f5-3754-46cc-91aa-c705d3493353/Untitled.png)
-
 ### Redis 2.7.5
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/195f91d1-3a67-417f-a2a6-66c488aeeec6/Untitled.png)
 
 ### Gradle
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a7cfa78-612d-4c18-9477-9484fe428cd5/Untitled.png)
-
 ### Spring Security 5.7.4
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/737f6caf-7358-4a7a-9e3b-8b15c928ebed/Untitled.png)
 
 ### queryDSL 5.0.0
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d1c8cd0e-9f09-493a-af6f-2187d4760cfc/Untitled.png)
-
 ### JAVA 11
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c5e1c99-e54e-4b22-8292-f9a7af0b5225/Untitled.png)
 
 ### MYSQL 8.0.28
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ea78756-df1b-4f1a-95e1-7e140c18c63b/Untitled.png)
-
 ### JUnit 4.13.1
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/920e7e99-0f14-4f64-9fb1-32f57a281784/Untitled.png)
 
 ### SWAGGER2 3.0.0
 
 ### Git & Github
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca818cc8-4930-4a41-895c-824f6f067038/Untitled.png)
 
 ### Figma
